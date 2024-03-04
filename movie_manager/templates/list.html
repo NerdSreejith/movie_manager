@@ -6,6 +6,9 @@
     <h1>Title: {{ m.title }}</h1> 
     <h2>Year: {{ m.year }}</h2>  
     <p>Description: {{ m.description }}</p>
+    <a href="{% url 'edit' m.id %}">Edit</a>
+    <a href="{% url 'delete' m.id %}">Delete</a>
+
 </div>
 {% endfor %}
 {% endblock content %}

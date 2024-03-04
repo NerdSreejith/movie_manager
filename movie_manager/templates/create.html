@@ -4,12 +4,7 @@
 
 <form method="post">
     {% csrf_token %}
-    <label for="title">Title: </label>
-    <input type="text" id="title" name="title"><br />
-    <label for="year">Year:</label>
-    <input type="number" id="year" name="year"><br>
-    <label for="summary">Summary:</label>
-    <input type="text" id="summary" name="description"><br>
+    {{frm.as_p}}
     <input type="submit" value="Submit">
 </form>
 {% endblock content %}
