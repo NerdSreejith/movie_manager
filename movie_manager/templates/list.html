@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>List Movies</h1>
+{% for m in movies %}
+<div class="container">
+    <h1>Title: {{ m.title }}</h1> 
+    <h2>Year: {{ m.year }}</h2>  
+    <p>Description: {{ m.description }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
